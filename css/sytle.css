@@ -1,0 +1,107 @@
+@charset "UTF-8";
+* {
+    margin: 20px auto;
+}
+
+/* id 속성의 이름이 container인 요소 - div*/
+#container {
+    width: 800px;
+    /*넓이*/
+    padding: 100px;
+    /*내용(컨텐츠)와 테두리사이 공간*/
+    /*solid 실선*/
+    padding-bottom: 250px;
+
+    border: 5px solid white;
+    /*container를 감싸는 테두리 설정*/
+
+    background-color: rgb(214, 241, 241);
+    position: relative; /* 자식 요소들의 위치를 조정하기 위해 상대적 위치 설정 */
+}
+
+p {
+    font-size: 0.9em;
+    /*16px - 1em 글자 크기*/
+    line-height: 2.0;
+    /*줄간격*/
+}
+
+/*.쩜은 클래스 선택자 - 장점은 class속성을 같은 이름으로 여러 요소에게 지정할 수 있음.*/
+.bluetext {
+    color: black;
+    height: 30%;    
+    margin: 0;
+    float: left;
+    width: 50%; 
+}
+.lasttext {
+    margin: 0;
+    float: left;
+    width: 50%; 
+}
+
+
+
+/*요소 중에서 class 속서의 값이 redtext인 요소에 빨간색을 적용하겠다.*/
+.redtext {
+    color: red;
+}
+
+/*요소 중에서 class 속성의 값이 boldtext인 요소에 글자를 두껍게 하겠다.*/
+.boldtext {
+    font-weight: bold;
+   
+}
+.cen {
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+
+}
+.cen ul li{
+    width: 70%;
+    height: 18px;
+}
+
+
+
+/*h2 중에서 class속성이 bgtext 요소의 배경색을 넣고, 중앙정렬*/
+h2.bgtext {
+    /*h2 요수중에서 bgtext 라는 클래스 속성을 갖고 있는 요소*/
+    background-color: pink;
+    text-align: center;
+    /*텍스트를 중앙정렬*/
+    padding: 3px;
+    /*텍스트와 테두리 사이의 간격*/
+
+}
+.use {
+    position: absolute; /* 절대 위치 지정 */
+    top: 20px; /* 위쪽 여백 설정 */
+    right: 20px; /* 오른쪽 여백 설정 */
+    text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+}
+
+.use img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px; /* 이미지 간 간격 조정 */
+}
+.use h2{
+    text-align: center;
+}
+
+
+/*img 요소의 스타일 지정*/
+img {
+    width: 150px;
+    /*이미지 넓이*/ 
+    height: 150px;
+    /*이미지 높이*/
+    border-radius: 10%;
+    /*이미지 모서리 둥글게*/
+    border: 2px 10px auto;
+    /*이미지를 테두리 설정*/
+    float: left;
+
+}
