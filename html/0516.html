@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <style>
+        /* 공통 CSS */
+        body {
+            font-family: '맑은 고딕', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* 시맨틱 태그 구분 위한 스타일 */
+        header, nav, aside, main, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid rgb(180, 178, 178);
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        /* 컨테이너 스타일 */
+        #container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /* 내비게이션 스타일 */   
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #666;
+           
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        /* 사이드바 스타일 */
+        aside {
+            width: 4    0%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* 메인 컨텐츠 스타일 */
+        main {
+            width: 55%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* 푸터 스타일 */
+        footer {
+            width: 55%;
+            text-align: center;
+            background-color:  #f8f9fa;
+            color:  #666;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>2단 레이아웃</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <h2>사이드바</h2>
+            <p>사이드바 내용이 여기에 들어갑니다.</p>
+        </aside>
+
+        <main>
+            <h2>메인 컨텐츠</h2>
+            <p>메인 컨텐츠 내용이 여기에 들어갑니다.</p>
+        </main>
+
+        <footer>
+            <h2>푸터</h2>
+            <p>푸터 내용이 여기에 들어갑니다.</p>
+        </footer>
+    </div>
+</body>
+</html>

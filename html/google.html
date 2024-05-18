@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border:  3px solid black;
+        }
+        .button{
+            margin-bottom: 30px;
+
+        }
+        
+        .button button{
+            width: 250px;
+            height: 30px;
+            margin-bottom: 20px;
+            margin-left: 21px;
+            
+        }
+        p{
+            margin-bottom: 50px;
+        }
+        .id input{
+            width: 250px;
+        }
+        .pw input{
+            width: 250px;
+        }
+        .login button{
+            width: 260px;
+            margin-bottom: 30px;
+        }
+        .button img{
+            position: relative;
+            width: 23px;
+            top: 8px;
+            right: 215px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <div class="button">
+            <button type="button">Log in with Google</button>
+            <img src="../images/google.jpg" alt="google">
+            </div>
+            <p>or</p>
+
+            <div class="id">
+                <label for="id"></label>
+                <input type="text" id="id" name="name" placeholder="Username">
+            </div>
+            <div class="pw">
+                <label for="pw"></label>
+                <input type="password" id="pw" name="pw" placeholder="Password">
+            </div>
+            <div class="login">
+                <button type="submit">LOGIN</button>
+            </div>
+                <a href="#">Forgot your password?</a>
+        </form>
+    </div>
+    
+</body>
+</html>
